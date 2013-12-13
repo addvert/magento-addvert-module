@@ -18,7 +18,7 @@ class Addvert_Addvert_Block_Tracking extends Mage_Core_Block_Template
         $secretKey = $helper->getSecretKey();
 
         $orderId = $this->_getOrder()->getIncrementId();
-        $orderTotal = $this->_getOrder()->getBaseGrandTotal();
+        $orderTotal = $this->_getOrder()->getBaseSubtotalInclTax();
 
         $url = sprintf(self::SCRIPT_BASE_URL . '/api/order/prep_total?ecommerce_id=%s&secret=%s&tracking_id=%s&total=%s', $ecommerceId, $secretKey, $orderId, $orderTotal);
         $client = new Zend_Http_Client($url);

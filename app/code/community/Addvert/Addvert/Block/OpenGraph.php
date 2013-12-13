@@ -61,6 +61,7 @@ class Addvert_Addvert_Block_OpenGraph extends Mage_Core_Block_Template
             foreach ($this->_getProduct()->getCategoryCollection()->addAttributeToSelect('name') as $category) {
                 if ($category->getLevel() > 1) {
                     $this->_categories[] = $category->getName();
+                    break; // @todo in questo momento le API supportano una sola categoria per volta
                 }
             }
         }
