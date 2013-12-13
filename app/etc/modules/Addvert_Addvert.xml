@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Addvert_Addvert>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Addvert_Addvert>
+    </modules>
+</config>

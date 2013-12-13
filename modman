@@ -1,0 +1,7 @@
+app/code/community/Addvert/Addvert/                    app/code/community/Addvert/Addvert/
+app/design/frontend/base/default/template/addvert/     app/design/frontend/base/default/template/addvert/
+app/design/frontend/base/default/layout/addvert/       app/design/frontend/base/default/layout/addvert/
+app/etc/modules/Addvert_Addvert.xml                    app/etc/modules/Addvert_Addvert.xml
+
+@shell   echo 'Addvert integration'
+

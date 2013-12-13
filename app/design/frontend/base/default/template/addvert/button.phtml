@@ -1,0 +1,16 @@
+<?php
+/**
+ * @category Addvert
+ * @package  Addvert_Addvert
+ * @author   Gennaro Vietri <gennaro.vietri@gmail.com>
+ */
+/* @var $this Addvert_Addvert_Block_Button */
+?>
+<script type="text/javascript">
+    (function() {
+        var js = document.createElement('script'); js.type = 'text/javascript'; js.async = true;
+        js.src = '<?php echo $this->getScriptUrl() ?>';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(js, s);
+    })();
+</script>
+<div class="addvert-btn" data-width="450" data-layout="<?php echo $this->getButtonLayout(); ?>"></div>

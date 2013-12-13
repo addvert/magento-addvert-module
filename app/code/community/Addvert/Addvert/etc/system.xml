@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <addvert translate="label">
+            <label>Addvert</label>
+            <sort_order>220</sort_order>
+        </addvert>
+    </tabs>
+    <sections>
+        <addvert translate="label" module="addvert">
+            <label>Addvert</label>
+            <tab>addvert</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <sort_order>1000</sort_order>
+            <groups>
+                <addvert translate="label" module="addvert">
+                    <label>Ecommerce integration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <ecommerce_id translate="label" module="addvert">
+                            <label>Ecommerce ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ecommerce_id>
+                        <secret translate="label" module="addvert">
+                            <label>Secret key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </secret>
+                        <button_layout translate="label" module="addvert">
+                            <label>Button layout</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>addvert/source_buttonLayout</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </button_layout>
+                    </fields>
+                </addvert>
+            </groups>
+        </addvert>
+    </sections>
+</config>
