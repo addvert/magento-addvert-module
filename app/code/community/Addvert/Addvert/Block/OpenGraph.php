@@ -35,7 +35,7 @@ class Addvert_Addvert_Block_OpenGraph extends Mage_Core_Block_Template
             array('name' => 'addvert:type',         'content' => self::ADDVERT_TYPE),
             array('name' => 'addvert:ecommerce_id', 'content' => Mage::helper('addvert')->getEcommerceId()),
             array('name' => 'addvert:category',     'content' => implode(',', $this->_getCategories())),
-            array('name' => 'addvert:price',        'content' => number_format(Mage::helper('core')->currency($product->getFinalPrice(), false, false), 2)),
+            array('name' => 'addvert:price',        'content' => number_format(Mage::helper('core')->currency($product->getFinalPrice(), false, false), 2, '.', '')), // usiamo solo il punto
         );
 
         foreach ($this->_getTags() as $tag) {
